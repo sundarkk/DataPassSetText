@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#ffffff"
+    android:padding="20sp"
+    android:orientation="vertical">
+
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/user"
+    android:layout_gravity="center"
+    android:layout_marginTop="100dp"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:src="@drawable/user"
+        android:background="@drawable/gradient"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="UserName"
+        android:textColorHint="#000000"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:background="@drawable/gradient"
+        android:id="@+id/EdtUserName"
+        android:typeface="serif"
+        android:textSize="20sp"/>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/sms"
+        android:background="@drawable/gradient"
+        android:layout_below="@+id/EdtUserName"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="Email"
+        android:textColorHint="#000000"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:background="@drawable/gradient"
+        android:layout_below="@+id/EdtUserName"
+        android:id="@+id/EdtEmail"
+        android:typeface="serif"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/password"
+        android:background="@drawable/gradient"
+        android:layout_below="@+id/EdtEmail"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:textColorHint="#000000"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:background="@drawable/gradient"
+        android:layout_below="@+id/EdtEmail"
+        android:id="@+id/EdtPassword"
+        android:typeface="serif"
+        android:textSize="20sp"/>
+
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/unlock"
+        android:background="@drawable/gradient"
+        android:layout_below="@+id/EdtPassword"
+        android:layout_marginLeft="75dp"/>
+
+
+     <Button
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/EdtPassword"
+        android:layout_marginLeft="100dp"
+         android:background="@drawable/transparent"
+         android:id="@+id/BtnLogin"
+         android:text="Login"
+         android:layout_marginTop="5dp"
+         android:textAllCaps="false"
+         android:typeface="serif"
+         android:textSize="20sp"/>
+
+
+</RelativeLayout>
+
+
+
+
+</LinearLayout>
